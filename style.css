@@ -38,7 +38,7 @@ td {
     height: 2ch;
   }
 
-td, #resetbtn {
+td, #resetbtn, #selectGamemodeBtn {
     cursor: pointer;
 } 
 
@@ -65,4 +65,45 @@ tr:nth-child(2) > td {
     height: 5rem;
     font-size: 32px;
     margin-top: 2rem;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-y: hidden; 
+    transition: 0.5s; 
+}
+
+.overlay_content {
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+.overlay p {
+    padding: 8px;
+    font-size: 36px;
+    color: #818181; 
+    transition: 0.3s; 
+}
+
+.overlay p:hover, .overlay p:focus {
+    color: #f1f1f1;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    color: rgba(245, 246, 250,1.0);
+}
+
+#selectGamemodeBtn {
+   margin-top: 10px;
 }
