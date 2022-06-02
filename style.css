@@ -21,7 +21,7 @@ table, tr, td {
     border-collapse: collapse;
     padding: 0;
     white-space: nowrap;
-    
+    user-select: none;
     
 }
 table {
