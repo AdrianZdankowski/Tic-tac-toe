@@ -8,7 +8,14 @@
 		<script src="script.js" defer></script>
 		<link rel="stylesheet" href="style.css" />
 	</head>
-	<body>
+	<body onload="openNav()">
+		<div id="select_gamemode" class="overlay">
+			<div class="overlay_content">
+				<h1>SELECT GAMEMODE</h1>
+				<p id="pvp" class="gamemode">Play against other player</p>
+				<p id="ai" class="gamemode">Play against AI</p>
+			</div>
+		</div>
 		<div id="main">
 			<p id="turn"></p>
 			<table>
@@ -29,6 +36,7 @@
 				</tr>
 			</table>
 			<button id="resetbtn">RESET</button>
+			<button id="selectGamemodeBtn">SELECT GAMEMODE</button>
 		</div>
 	</body>
 </html>
