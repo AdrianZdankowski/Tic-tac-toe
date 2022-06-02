@@ -5,10 +5,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Tic Tac Toe</title>
-		<script src="script.js" defer></script>
+		<script src="js/script.js" defer type="module"></script>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<div id="select_gamemode" class="overlay">
+			<div class="overlay_content">
+				<h1>SELECT GAMEMODE</h1>
+				<p id="pvp" class="gamemode">Play against other player</p>
+				<p id="ai" class="gamemode">Play against AI</p>
+			</div>
+		</div>
 		<div id="main">
 			<p id="turn"></p>
 			<table>
@@ -29,6 +36,7 @@
 				</tr>
 			</table>
 			<button id="resetbtn">RESET</button>
+			<button id="selectGamemodeBtn">SELECT GAMEMODE</button>
 		</div>
 	</body>
 </html>
